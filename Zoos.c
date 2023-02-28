@@ -5,7 +5,6 @@ int main(){
 	int zcount = 0;
     int ocount = 0;
 	scanf("%s", ch);
-    printf("strlen: %d\n",strlen(ch));
 
     int i = 0;
 	while (ch[i] != 'o')
@@ -15,13 +14,12 @@ int main(){
 		
 	}
 	ocount = strlen(ch) - zcount;
-
-	if (ocount*2 == zcount)
+	if (zcount*2 == ocount)
 	{
 		printf("Yes");
 	}
 	else
 	{
-		printf("NO");
+		printf("No");
 	}
 }
